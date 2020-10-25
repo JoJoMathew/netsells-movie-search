@@ -9,6 +9,8 @@ import XCTest
 @testable import SearchMov
 
 class SearchMovTests: XCTestCase {
+    
+    private let networkManager = NetworkManager()
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -28,5 +30,15 @@ class SearchMovTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testSearch() {
+        let prom = expectation(description: "Search for Star Wars")
+        let movies =  networkManager.searchMovieByName(name: "Star Wars")
+        let first = movies?[0]
+        XCTAssertNotNil(movies)
+        XCTAssertTrue(((first?.Title?.contains("Star Wars")) != nil))
+        prom.fulfill()
+        waitForExpectations(timeout: 2, handler: nil)
     }
 }
