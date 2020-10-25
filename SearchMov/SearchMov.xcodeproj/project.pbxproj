@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		C9066D1E2545ADCF00D1A055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D1D2545ADCF00D1A055 /* AppDelegate.swift */; };
 		C9066D202545ADCF00D1A055 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D1F2545ADCF00D1A055 /* SceneDelegate.swift */; };
-		C9066D222545ADCF00D1A055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D212545ADCF00D1A055 /* ViewController.swift */; };
+		C9066D222545ADCF00D1A055 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D212545ADCF00D1A055 /* SearchController.swift */; };
 		C9066D252545ADCF00D1A055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9066D232545ADCF00D1A055 /* Main.storyboard */; };
 		C9066D272545ADD000D1A055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9066D262545ADD000D1A055 /* Assets.xcassets */; };
 		C9066D2A2545ADD000D1A055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9066D282545ADD000D1A055 /* LaunchScreen.storyboard */; };
 		C9066D352545ADD000D1A055 /* SearchMovTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D342545ADD000D1A055 /* SearchMovTests.swift */; };
 		C9066D402545ADD000D1A055 /* SearchMovUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D3F2545ADD000D1A055 /* SearchMovUITests.swift */; };
+		C9066D512545B18100D1A055 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D502545B18100D1A055 /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 		C9066D1A2545ADCF00D1A055 /* SearchMov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchMov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9066D1D2545ADCF00D1A055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9066D1F2545ADCF00D1A055 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C9066D212545ADCF00D1A055 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9066D212545ADCF00D1A055 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		C9066D242545ADCF00D1A055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9066D262545ADD000D1A055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9066D292545ADD000D1A055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		C9066D3B2545ADD000D1A055 /* SearchMovUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchMovUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9066D3F2545ADD000D1A055 /* SearchMovUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovUITests.swift; sourceTree = "<group>"; };
 		C9066D412545ADD000D1A055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9066D502545B18100D1A055 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,8 @@
 		C9066D1C2545ADCF00D1A055 /* SearchMov */ = {
 			isa = PBXGroup;
 			children = (
-				C9066D1D2545ADCF00D1A055 /* AppDelegate.swift */,
-				C9066D1F2545ADCF00D1A055 /* SceneDelegate.swift */,
-				C9066D212545ADCF00D1A055 /* ViewController.swift */,
+				C9066D592545B1B300D1A055 /* ViewControllers */,
+				C9066D582545B19B00D1A055 /* Delegates */,
 				C9066D232545ADCF00D1A055 /* Main.storyboard */,
 				C9066D262545ADD000D1A055 /* Assets.xcassets */,
 				C9066D282545ADD000D1A055 /* LaunchScreen.storyboard */,
@@ -126,6 +127,24 @@
 				C9066D412545ADD000D1A055 /* Info.plist */,
 			);
 			path = SearchMovUITests;
+			sourceTree = "<group>";
+		};
+		C9066D582545B19B00D1A055 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C9066D1D2545ADCF00D1A055 /* AppDelegate.swift */,
+				C9066D1F2545ADCF00D1A055 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		C9066D592545B1B300D1A055 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9066D502545B18100D1A055 /* DetailController.swift */,
+				C9066D212545ADCF00D1A055 /* SearchController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9066D222545ADCF00D1A055 /* ViewController.swift in Sources */,
+				C9066D512545B18100D1A055 /* DetailController.swift in Sources */,
+				C9066D222545ADCF00D1A055 /* SearchController.swift in Sources */,
 				C9066D1E2545ADCF00D1A055 /* AppDelegate.swift in Sources */,
 				C9066D202545ADCF00D1A055 /* SceneDelegate.swift in Sources */,
 			);
