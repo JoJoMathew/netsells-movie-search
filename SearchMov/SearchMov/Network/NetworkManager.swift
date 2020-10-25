@@ -82,7 +82,7 @@ class NetworkManager {
         return result
     }
     
-    //TODO: Error Handling
+    // TODO: Proper Error Handling
     enum NetworkError: Error {
         case dataEmpty
         case dataInvalid

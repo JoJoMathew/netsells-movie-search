@@ -22,7 +22,7 @@ class SearchController: UIViewController, UITableViewDataSource, UITableViewDele
         self.tableview.delegate = self
         self.searchBar.delegate = self
         
-        // NavBar & SearchBar
+        // NavBar & SearchBar Setup
         searchBar.placeholder = "Search Movies"
         navigationItem.titleView = searchBar
         title = "Search"
@@ -87,11 +87,16 @@ class SearchController: UIViewController, UITableViewDataSource, UITableViewDele
     // MARK: - SearchBar
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
+        // Hide Keyboard
         searchBar.resignFirstResponder()
         
+        // Check SearchBar Has Text
         if !searchBar.text!.isEmpty {
+            
+            // Clear Old Data
             data.removeAll()
             
+            // Request New Data If Network Available
             if ConnectionManager.isConnectedToNetwork() {
                 if let results = networkManager.searchMovieByName(name: searchBar.text!) {
                     for item in results {
@@ -99,11 +104,12 @@ class SearchController: UIViewController, UITableViewDataSource, UITableViewDele
                     }
                 }
                 
+                // Reload TableView
                 DispatchQueue.main.async {
                     self.tableview.reloadData()
                 }
-                
-            }else {
+              
+            }else { // No Internet Connection - Show Alert
                 showAlert()
             }
         }

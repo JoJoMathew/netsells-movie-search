@@ -10,6 +10,7 @@ import UIKit
 // MARK: - UIImageView Extension
 extension UIImageView {
     
+    // Download Image & Populate ImageView
     public func downloadImage(from url: URL, imageView: UIImageView) {
         getData(from: url) { data, response, error in
             guard let data = data, error == nil else { return }
@@ -30,6 +31,7 @@ extension UIImageView {
 // MARK: - UIImage Extension
 extension UIImage {
     
+    // Rounded Image Corners
     public func withRoundedCorners(radius: CGFloat? = nil) -> UIImage? {
         let maxRadius = min(size.width, size.height) / 2
         let cornerRadius: CGFloat
@@ -51,6 +53,7 @@ extension UIImage {
 // MARK: - UIViewController
 extension UIViewController {
     
+    // No Intenet Alert
     func showAlert() {
         let alert = UIAlertController(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", preferredStyle: UIAlertController.Style.alert)
         
@@ -61,4 +64,3 @@ extension UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 }
-
