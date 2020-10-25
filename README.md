@@ -10,6 +10,8 @@ Use Git to clone the repository
 $ git clone https://github.com/JoJoMathew/netsells-movie-search.git
 ```
 
+Then run project in XCode.
+
 ## Usage
 
 Use the SearchBar to find information on your favourite movies. You can tap the movie row for more detailed information.
