@@ -19,6 +19,9 @@
 		C9066D5F2545B32F00D1A055 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D5E2545B32F00D1A055 /* NetworkManager.swift */; };
 		C9066D672545B35D00D1A055 /* ResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D662545B35D00D1A055 /* ResponseModels.swift */; };
 		C9066D6F2545B4A400D1A055 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D6E2545B4A400D1A055 /* ConnectionManager.swift */; };
+		C9066D752545B78000D1A055 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D742545B78000D1A055 /* Extensions.swift */; };
+		C9066D7B2545B7DA00D1A055 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D7A2545B7DA00D1A055 /* SearchResultCell.swift */; };
+		C9066D802545B7F800D1A055 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9066D7F2545B7F800D1A055 /* SearchResultCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		C9066D5E2545B32F00D1A055 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C9066D662545B35D00D1A055 /* ResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModels.swift; sourceTree = "<group>"; };
 		C9066D6E2545B4A400D1A055 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		C9066D742545B78000D1A055 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C9066D7A2545B7DA00D1A055 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		C9066D7F2545B7F800D1A055 /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +113,13 @@
 		C9066D1C2545ADCF00D1A055 /* SearchMov */ = {
 			isa = PBXGroup;
 			children = (
+				C9066D842545B93800D1A055 /* Storyboards */,
+				C9066D792545B7C900D1A055 /* Compnents */,
+				C9066D732545B75E00D1A055 /* Extensions */,
 				C9066D5D2545B2F100D1A055 /* Network */,
 				C9066D592545B1B300D1A055 /* ViewControllers */,
 				C9066D582545B19B00D1A055 /* Delegates */,
-				C9066D232545ADCF00D1A055 /* Main.storyboard */,
 				C9066D262545ADD000D1A055 /* Assets.xcassets */,
-				C9066D282545ADD000D1A055 /* LaunchScreen.storyboard */,
 				C9066D2B2545ADD000D1A055 /* Info.plist */,
 			);
 			path = SearchMov;
@@ -162,6 +169,32 @@
 				C9066D6E2545B4A400D1A055 /* ConnectionManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		C9066D732545B75E00D1A055 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9066D742545B78000D1A055 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C9066D792545B7C900D1A055 /* Compnents */ = {
+			isa = PBXGroup;
+			children = (
+				C9066D7A2545B7DA00D1A055 /* SearchResultCell.swift */,
+			);
+			path = Compnents;
+			sourceTree = "<group>";
+		};
+		C9066D842545B93800D1A055 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C9066D232545ADCF00D1A055 /* Main.storyboard */,
+				C9066D282545ADD000D1A055 /* LaunchScreen.storyboard */,
+				C9066D7F2545B7F800D1A055 /* SearchResultCell.xib */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +302,7 @@
 			files = (
 				C9066D2A2545ADD000D1A055 /* LaunchScreen.storyboard in Resources */,
 				C9066D272545ADD000D1A055 /* Assets.xcassets in Resources */,
+				C9066D802545B7F800D1A055 /* SearchResultCell.xib in Resources */,
 				C9066D252545ADCF00D1A055 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,9 +331,11 @@
 				C9066D512545B18100D1A055 /* DetailController.swift in Sources */,
 				C9066D222545ADCF00D1A055 /* SearchController.swift in Sources */,
 				C9066D5F2545B32F00D1A055 /* NetworkManager.swift in Sources */,
+				C9066D752545B78000D1A055 /* Extensions.swift in Sources */,
 				C9066D6F2545B4A400D1A055 /* ConnectionManager.swift in Sources */,
 				C9066D672545B35D00D1A055 /* ResponseModels.swift in Sources */,
 				C9066D1E2545ADCF00D1A055 /* AppDelegate.swift in Sources */,
+				C9066D7B2545B7DA00D1A055 /* SearchResultCell.swift in Sources */,
 				C9066D202545ADCF00D1A055 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,10 +15,25 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rcV-Xd-rS1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rcV-Xd-rS1" secondAttribute="bottom" id="E5g-92-jVc"/>
+                            <constraint firstItem="rcV-Xd-rS1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mi2-3C-mAc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rcV-Xd-rS1" secondAttribute="trailing" id="UD1-nV-sGQ"/>
+                            <constraint firstItem="rcV-Xd-rS1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="W11-y4-vuK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Dc3-NK-QzV"/>
+                    <connections>
+                        <outlet property="tableview" destination="rcV-Xd-rS1" id="wKX-pR-Zvf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -27,7 +42,7 @@
         <!--Detail Controller-->
         <scene sceneID="5dJ-qc-Lci">
             <objects>
-                <viewController id="jPR-hR-RmK" customClass="DetailController" customModule="SearchMov" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailController" id="jPR-hR-RmK" customClass="DetailController" customModule="SearchMov" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FyP-IY-3FI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

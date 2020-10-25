@@ -8,6 +8,8 @@
 import UIKit
 
 class DetailController: UIViewController {
+    
+    var imdbID: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
