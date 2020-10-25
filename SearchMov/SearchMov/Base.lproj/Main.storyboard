@@ -34,6 +34,7 @@
                         <viewLayoutGuide key="safeArea" id="7gw-gL-Rqf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Upe-yT-x5Z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="13C-Xc-wfs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

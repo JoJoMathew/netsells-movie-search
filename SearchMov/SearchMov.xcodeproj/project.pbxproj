@@ -16,6 +16,9 @@
 		C9066D352545ADD000D1A055 /* SearchMovTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D342545ADD000D1A055 /* SearchMovTests.swift */; };
 		C9066D402545ADD000D1A055 /* SearchMovUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D3F2545ADD000D1A055 /* SearchMovUITests.swift */; };
 		C9066D512545B18100D1A055 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D502545B18100D1A055 /* DetailController.swift */; };
+		C9066D5F2545B32F00D1A055 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D5E2545B32F00D1A055 /* NetworkManager.swift */; };
+		C9066D672545B35D00D1A055 /* ResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D662545B35D00D1A055 /* ResponseModels.swift */; };
+		C9066D6F2545B4A400D1A055 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9066D6E2545B4A400D1A055 /* ConnectionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		C9066D3F2545ADD000D1A055 /* SearchMovUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovUITests.swift; sourceTree = "<group>"; };
 		C9066D412545ADD000D1A055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9066D502545B18100D1A055 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		C9066D5E2545B32F00D1A055 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C9066D662545B35D00D1A055 /* ResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModels.swift; sourceTree = "<group>"; };
+		C9066D6E2545B4A400D1A055 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		C9066D1C2545ADCF00D1A055 /* SearchMov */ = {
 			isa = PBXGroup;
 			children = (
+				C9066D5D2545B2F100D1A055 /* Network */,
 				C9066D592545B1B300D1A055 /* ViewControllers */,
 				C9066D582545B19B00D1A055 /* Delegates */,
 				C9066D232545ADCF00D1A055 /* Main.storyboard */,
@@ -145,6 +152,16 @@
 				C9066D212545ADCF00D1A055 /* SearchController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C9066D5D2545B2F100D1A055 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C9066D5E2545B32F00D1A055 /* NetworkManager.swift */,
+				C9066D662545B35D00D1A055 /* ResponseModels.swift */,
+				C9066D6E2545B4A400D1A055 /* ConnectionManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +296,9 @@
 			files = (
 				C9066D512545B18100D1A055 /* DetailController.swift in Sources */,
 				C9066D222545ADCF00D1A055 /* SearchController.swift in Sources */,
+				C9066D5F2545B32F00D1A055 /* NetworkManager.swift in Sources */,
+				C9066D6F2545B4A400D1A055 /* ConnectionManager.swift in Sources */,
+				C9066D672545B35D00D1A055 /* ResponseModels.swift in Sources */,
 				C9066D1E2545ADCF00D1A055 /* AppDelegate.swift in Sources */,
 				C9066D202545ADCF00D1A055 /* SceneDelegate.swift in Sources */,
 			);
